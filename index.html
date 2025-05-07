@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+
+    <!-- Material symbol icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
-    
+    <header>
+        <div class="notification">
+            <!-- Anything notification that the business want to put in -->
+            Freeshipping for orders over AUD$250
+        </div>
+        <nav>
+            <a class="active" href="#home">Home</a>
+            <a href="#newarrivals">New Arrivals</a>
+            <a href="#pre-loved">Pre-Loved</a>
+            <a href="#aboutus">About Us</a>
+            <img src="images/Marlow and Mae Logo.webp" alt="Marlow and Mae logo in cursive font.">
+            
+            <!-- Icon buttons -->
+            <button id="search-icon" class="icon-button">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+
+            <button id="cart-icon" class="icon-button">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </button>
+            
+            <!-- Currency selecter -->
+            <div class="currency-selecter-wrapper">
+                <select id="currency-selector" class="custom-select">
+                  <option value="AUD">AUD</option>
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="JPY">JPY</option>
+                  <option value="KRW">KRW</option>
+                  <option value="RMB">RMB</option>
+                </select>
+            </div>
+
+            
+
+        </nav>
+    </header>
 </body>
 </html>
