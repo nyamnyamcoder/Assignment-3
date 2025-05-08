@@ -1,0 +1,36 @@
+/* Heading font */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Noto+Sans:ital,wght@0,300;1,300&display=swap');
+/* Body font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;600&display=swap');
+
+:root {
+    /* Body */
+    --font-primary: 'Noto Sans', Arial, Helvetica, sans-serif;
+    --font-primary-bold: 600;
+    --font-primary-normal: 300;
+    /* Headings */
+    --font-secondary: 'Crimson Pro', serif;
+    --font-secondary-bold: 600;
+    --font-secondary-normal: 300;
+    /* Base value */
+    --text-base-size: 1rem;
+    --text-base-letter-spacing: 0.4px;
+
+}
+body {
+    font-family: var(--font-primary);
+    font-size: var(--text-base-size);
+    font-weight: var(--font-primary-normal);
+    letter-spacing: var(--text-base-letter-spacing);
+}
+
+.heading {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-secondary-normal);
+}
+
+nav > a {
+    font-weight: var(--font-primary-bold);
+    text-decoration: none;
+}
+

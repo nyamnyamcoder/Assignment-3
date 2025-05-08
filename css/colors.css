@@ -1,0 +1,34 @@
+:root {
+    --color-dark-green: #206004;
+    --color-light-green: #7D9B70;
+    --color-brown: #635436;
+    --color-white: #FFFDFA;
+    --color-black: #2B2B2B;
+  }
+
+
+body {
+    background-color: var(--color-white);
+
+}
+
+nav {
+    background-color: var(--color-light-green);
+}
+
+.notification {
+    background-color: var(--color-brown);
+}
+
+.heading {
+    color: var(--color-dark-green);
+}
+
+.heading--white {
+    color: var(--color-white);
+}
+
+.p--white {
+    color: var(--color-white);
+}
+

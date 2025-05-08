@@ -6,9 +6,7 @@
     <title>Document</title>
 
     <!-- CSS files -->
-    <link rel="stylesheet" href="css/colors.css">
-    <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Material symbol icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
@@ -17,23 +15,23 @@
     <header>
         <div class="notification">
             <!-- Anything notification that the business want to put in -->
-            Freeshipping for orders over AUD$250
+            <h3 class="heading heading--white">Free shipping for orders over AUD$250</h3>
         </div>
         <nav>
-            <a class="active" href="#home">Home</a>
-            <a href="#newarrivals">New Arrivals</a>
-            <a href="#pre-loved">Pre-Loved</a>
-            <a href="#aboutus">About Us</a>
-            <img src="images/Marlow and Mae Logo.webp" alt="Marlow and Mae logo in cursive font.">
+            <a href="#home" class="p--white">Home</a>
+            <a href="#newarrivals" class="p--white">New Arrivals</a>
+            <a href="#pre-loved" class="p--white">Pre-Loved</a>
+            <a href="#aboutus" class="p--white">About Us</a>
+            <img class="brand-logo" src="images/Marlow and Mae Logo.webp" alt="Marlow and Mae logo in cursive font.">
             
             <!-- Icon buttons -->
-            <button id="search-icon" class="icon-button">
+            <button id="search-icon" class="btn btn--icon-white">
                 <span class="material-symbols-outlined">
                     search
                 </span>
             </button>
 
-            <button id="cart-icon" class="icon-button">
+            <button id="cart-icon" class="btn btn--icon-white">
                 <span class="material-symbols-outlined">
                     shopping_cart
                 </span>
@@ -41,7 +39,7 @@
             
             <!-- Currency selecter -->
             <div class="currency-selecter-wrapper">
-                <select id="currency-selector" class="custom-select">
+                <select id="currency-selector" class="btn btn--icon-white">
                   <option value="AUD">AUD</option>
                   <option value="USD">USD</option>
                   <option value="EUR">EUR</option>
