@@ -1,0 +1,25 @@
+:root {
+    --padding-extra-small-desktop: 8px;
+    --padding-extra-small-phone: 6px;
+    --padding-small-desktop: 15px;
+    --padding-small-phone: 10px;
+  }
+  
+
+.notification {
+    padding: var(--padding-extra-small-desktop) 0;
+}
+
+nav {
+    padding: var(--padding-small-desktop) 0;
+} 
+
+@media (max-width: 390px) {
+    .notification{
+        padding: var(--padding-extra-small-phone) 0;
+    }
+
+    nav {
+        padding: var(--padding-small-phone) 0;
+    } 
+}

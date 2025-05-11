@@ -32,3 +32,9 @@ nav {
     color: var(--color-white);
 }
 
+.btn--icon-white {
+    color: var(--color-white);
+    background: none;
+    padding: 0;
+}
+

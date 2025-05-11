@@ -12,16 +12,18 @@
     --font-secondary: 'Crimson Pro', serif;
     --font-secondary-bold: 600;
     --font-secondary-normal: 300;
-    /* Base value */
-    --text-base-size: 1rem;
-    --text-base-letter-spacing: 0.4px;
+    /* Base value for font sizes */
+    --text-desktop-base-size: 1rem;
+    --text-phone-base-size: 0.8rem;
+    --text-desktop-letter-spacing: 0.4px;
 
 }
+
 body {
     font-family: var(--font-primary);
-    font-size: var(--text-base-size);
+    font-size: var(--text-desktop-base-size);
     font-weight: var(--font-primary-normal);
-    letter-spacing: var(--text-base-letter-spacing);
+    letter-spacing: var(--text-desktop-letter-spacing);
 }
 
 .heading {
@@ -29,8 +31,29 @@ body {
     font-weight: var(--font-secondary-normal);
 }
 
-nav > a {
+ul {
+    list-style-type: none;
+  }
+  
+a {
     font-weight: var(--font-primary-bold);
     text-decoration: none;
 }
+
+#currency-selector {
+    font-weight: var(--font-primary-bold);
+    font-family: var(--font-primary);
+    font-size: var(--text-desktop-base-size);
+    letter-spacing: var(--text-desktop-letter-spacing);
+
+}
+
+@media (max-width: 390px) {
+    body {
+        font-size: var(--text-phone-base-size);
+    }
+    
+}
+
+
 

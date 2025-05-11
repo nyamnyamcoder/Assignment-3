@@ -3,6 +3,61 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  width: 100%;
+}
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-links-ul{
+  display: flex;
+  justify-content: center;
+  justify-self: start;
+  gap: 1rem;
+}
+.nav-links-ul li {
+  white-space: nowrap;
+}
+
+.brand-logo {
+  width: 300px;
+  justify-self: center;
+}
+
+.icon-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-self: end;
+}
+
+@media (max-width: 390px) {
+
+  body {
+    flex-direction: column;
+  }
+
+  .brand-logo{
+    width: 200px;
+  }
+
+}
 
