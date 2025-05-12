@@ -7,16 +7,15 @@
     /* Body */
     --font-primary: 'Noto Sans', Arial, Helvetica, sans-serif;
     --font-primary-bold: 600;
-    --font-primary-normal: 300;
+    --font-primary-normal: 400;
     /* Headings */
     --font-secondary: 'Crimson Pro', serif;
-    --font-secondary-bold: 600;
-    --font-secondary-normal: 300;
+    --font-secondary-bold: 400;
+    --font-secondary-normal: 200;
     /* Base value for font sizes */
     --text-desktop-base-size: 1rem;
     --text-phone-base-size: 0.8rem;
     --text-desktop-letter-spacing: 0.4px;
-
 }
 
 body {
@@ -36,12 +35,10 @@ ul {
   }
   
 a {
-    font-weight: var(--font-primary-bold);
     text-decoration: none;
 }
 
 #currency-selector {
-    font-weight: var(--font-primary-bold);
     font-family: var(--font-primary);
     font-size: var(--text-desktop-base-size);
     letter-spacing: var(--text-desktop-letter-spacing);

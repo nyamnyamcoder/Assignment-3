@@ -36,5 +36,6 @@ nav {
     color: var(--color-white);
     background: none;
     padding: 0;
+    border: none;
 }
 

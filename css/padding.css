@@ -1,8 +1,12 @@
 :root {
-    --padding-extra-small-desktop: 8px;
-    --padding-extra-small-phone: 6px;
-    --padding-small-desktop: 15px;
-    --padding-small-phone: 10px;
+    --padding-extra-small-desktop: 0.5rem;
+    --padding-extra-small-mobile: 0.4rem;
+    --padding-small-desktop: 1rem;
+    --padding-small-mobile: 0.6rem;
+    
+    /* Side padding */
+    --padding-side-desktop: 1.5rem;
+    --padding-side-mobile: 1rem;
   }
   
 
@@ -11,15 +15,15 @@
 }
 
 nav {
-    padding: var(--padding-small-desktop) 0;
+    padding: var(--padding-small-desktop) var(--padding-side-desktop);
 } 
 
 @media (max-width: 390px) {
     .notification{
-        padding: var(--padding-extra-small-phone) 0;
+        padding: var(--padding-extra-small-mobile) 0;
     }
 
     nav {
-        padding: var(--padding-small-phone) 0;
+        padding: var(--padding-small-mobile) var(--padding-side-mobile);
     } 
 }
