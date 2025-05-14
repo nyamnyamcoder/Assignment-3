@@ -15,6 +15,7 @@
     /* Padding for buttons */
     --padding-btn-tb-desktop: 0.7rem;
     --padding-btn-lr-desktop: 3rem;
+    --padding-btn-tb-mobile: 
   }
   
 
@@ -48,5 +49,9 @@ nav {
 
     .hero-section {
         padding: var(--padding-medium-mobile) var(--padding-side-mobile);
+    }
+
+    .hero-content-wrapper {
+        padding: 0;
     }
 }

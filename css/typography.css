@@ -13,18 +13,19 @@
     --font-secondary-bold: 500;
     --font-secondary-normal: 200;
     /* Base value for font sizes */
-    --text-desktop-base-size: 1rem;
-    --text-phone-base-size: 0.8rem;
+    --text-base-size: 1rem;
     --text-desktop-letter-spacing: 0.4px;
 
     /* Heading font sizes */
     --text-desktop-h1-size: 3.5rem;
+    --text-mobile-h1-size: 3rem;
     --text-desktop-h3-size: 1.5rem;
+    --text-mobile-h3-size: 1.2rem;
 }
 
 body {
     font-family: var(--font-primary);
-    font-size: var(--text-desktop-base-size);
+    font-size: var(--text-base-size);
     font-weight: var(--font-primary-normal);
     letter-spacing: var(--text-desktop-letter-spacing);
 }
@@ -44,12 +45,11 @@ a {
 
 #currency-selector {
     font-family: var(--font-primary);
-    font-size: var(--text-desktop-base-size);
+    font-size: var(--text-base-size);
     letter-spacing: var(--text-desktop-letter-spacing);
-
 }
 
-h1.heading {
+h1.hero-text {
     font-weight: var(--font-secondary-bold);
     font-size: var( --text-desktop-h1-size);
     font-style: italic;
@@ -62,9 +62,19 @@ h1.heading {
 }
 
 @media (max-width: 390px) {
-    body {
-        font-size: var(--text-phone-base-size);
+    h3 {
+        font-size: var(--text-mobile-h3-size);
     }
+    h1 {
+        font-size: var(--text-mobile-h1-size);
+    }
+
+    .btn{
+        font-family: var(--font-secondary);
+        font-weight: var(--font-secondary-normal);
+        font-size: var(--text-mobile-h3-size);
+    }
+
     
 }
 

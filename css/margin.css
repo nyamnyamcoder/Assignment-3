@@ -1,8 +1,18 @@
 :root {
     --margin-desktop-top-bottom: 1rem;
+    --margin-mobile-top-bottom: 0.5rem;
 
 }
 
 .shop-now-cta {
     margin-top: var(--margin-desktop-top-bottom);
+}
+
+@media (max-width: 390px) {
+    .hero-text {
+        margin-top: var(--margin-mobile-top-bottom);
+    }
+    .shop-now-cta {
+        margin-top: var(--margin-mobile-top-bottom);
+    }
 }
