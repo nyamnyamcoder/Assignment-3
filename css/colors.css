@@ -44,5 +44,7 @@ nav {
 
 .btn--brown {
     background-color: var(--color-brown);
+    border: none;
+    color: var(--color-white);
 }
 

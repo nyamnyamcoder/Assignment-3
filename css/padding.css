@@ -11,6 +11,10 @@
     /* Side padding */
     --padding-side-desktop: 2rem;
     --padding-side-mobile: 0.8rem;
+
+    /* Padding for buttons */
+    --padding-btn-tb-desktop: 0.7rem;
+    --padding-btn-lr-desktop: 3rem;
   }
   
 
@@ -24,6 +28,13 @@ nav {
 
 .hero-section {
     padding: var(--padding-medium-desktop) var(--padding-side-desktop);
+}
+
+.hero-content-wrapper {
+    padding: 0 var(--padding-side-desktop);
+}
+.btn {
+    padding: var(--padding-btn-tb-desktop) var(--padding-btn-lr-desktop);
 }
 
 @media (max-width: 390px) {

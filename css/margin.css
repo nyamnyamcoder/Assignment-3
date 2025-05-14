@@ -1,0 +1,8 @@
+:root {
+    --margin-desktop-top-bottom: 1rem;
+
+}
+
+.shop-now-cta {
+    margin-top: var(--margin-desktop-top-bottom);
+}

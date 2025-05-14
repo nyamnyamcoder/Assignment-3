@@ -18,7 +18,8 @@
     --text-desktop-letter-spacing: 0.4px;
 
     /* Heading font sizes */
-    --text-desktop-h1-size: 4rem;
+    --text-desktop-h1-size: 3.5rem;
+    --text-desktop-h3-size: 1.5rem;
 }
 
 body {
@@ -52,6 +53,12 @@ h1.heading {
     font-weight: var(--font-secondary-bold);
     font-size: var( --text-desktop-h1-size);
     font-style: italic;
+}
+
+.btn {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-secondary-normal);
+    font-size: var(--text-desktop-h3-size);
 }
 
 @media (max-width: 390px) {
