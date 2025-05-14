@@ -10,12 +10,15 @@
     --font-primary-normal: 400;
     /* Headings */
     --font-secondary: 'Crimson Pro', serif;
-    --font-secondary-bold: 400;
+    --font-secondary-bold: 500;
     --font-secondary-normal: 200;
     /* Base value for font sizes */
     --text-desktop-base-size: 1rem;
     --text-phone-base-size: 0.8rem;
     --text-desktop-letter-spacing: 0.4px;
+
+    /* Heading font sizes */
+    --text-desktop-h1-size: 4rem;
 }
 
 body {
@@ -43,6 +46,12 @@ a {
     font-size: var(--text-desktop-base-size);
     letter-spacing: var(--text-desktop-letter-spacing);
 
+}
+
+h1.heading {
+    font-weight: var(--font-secondary-bold);
+    font-size: var( --text-desktop-h1-size);
+    font-style: italic;
 }
 
 @media (max-width: 390px) {

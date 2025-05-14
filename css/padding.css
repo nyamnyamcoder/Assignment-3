@@ -3,10 +3,14 @@
     --padding-extra-small-mobile: 0.4rem;
     --padding-small-desktop: 1rem;
     --padding-small-mobile: 0.6rem;
+    --padding-medium-desktop: 2rem;
+    --padding-medium-mobile: 1rem;
+    --padding-large-desktop: 3rem;
+    --padding-large-mobile: 2rem;
     
     /* Side padding */
-    --padding-side-desktop: 1.5rem;
-    --padding-side-mobile: 1rem;
+    --padding-side-desktop: 2rem;
+    --padding-side-mobile: 0.8rem;
   }
   
 
@@ -18,6 +22,10 @@ nav {
     padding: var(--padding-small-desktop) var(--padding-side-desktop);
 } 
 
+.hero-section {
+    padding: var(--padding-medium-desktop) var(--padding-side-desktop);
+}
+
 @media (max-width: 390px) {
     .notification{
         padding: var(--padding-extra-small-mobile) 0;
@@ -26,4 +34,8 @@ nav {
     nav {
         padding: var(--padding-small-mobile) var(--padding-side-mobile);
     } 
+
+    .hero-section {
+        padding: var(--padding-medium-mobile) var(--padding-side-mobile);
+    }
 }

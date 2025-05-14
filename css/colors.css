@@ -28,6 +28,9 @@ nav {
     color: var(--color-white);
 }
 
+.heading--green {
+    color: var(--color-dark-green);
+}
 .p--white {
     color: var(--color-white);
 }
@@ -37,5 +40,9 @@ nav {
     background: none;
     padding: 0;
     border: none;
+}
+
+.btn--brown {
+    background-color: var(--color-brown);
 }
 
