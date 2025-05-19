@@ -38,6 +38,10 @@ nav {
     padding: var(--padding-btn-tb-desktop) var(--padding-btn-lr-desktop);
 }
 
+.about-section {
+    padding: var(--padding-medium-desktop) var(--padding-side-desktop);
+}
+
 @media (max-width: 390px) {
     .notification{
         padding: var(--padding-extra-small-mobile) 0;
@@ -53,5 +57,9 @@ nav {
 
     .hero-content-wrapper {
         padding: 0;
+    }
+
+    .about-section {
+        padding: var(--padding-medium-mobile) var(--padding-side-mobile);
     }
 }
