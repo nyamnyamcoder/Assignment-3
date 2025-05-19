@@ -19,6 +19,8 @@
     /* Heading font sizes */
     --text-desktop-h1-size: 3.5rem;
     --text-mobile-h1-size: 3rem;
+    --text-desktop-h2-size: 2rem;
+    --text-mobile-h2-size: 1.5rem;
     --text-desktop-h3-size: 1.5rem;
     --text-mobile-h3-size: 1.2rem;
 }
@@ -32,9 +34,11 @@ body {
 
 .heading {
     font-family: var(--font-secondary);
-    font-weight: var(--font-secondary-normal);
 }
 
+.notification > h3 {
+    font-weight: var(--font-secondary-normal);
+}
 ul {
     list-style-type: none;
   }
@@ -49,7 +53,7 @@ li > a {
     letter-spacing: var(--text-desktop-letter-spacing);
 }
 
-h1.hero-text {
+h1 {
     font-weight: var(--font-secondary-bold);
     font-size: var( --text-desktop-h1-size);
     font-style: italic;
@@ -61,9 +65,23 @@ h1.hero-text {
     font-size: var(--text-desktop-h3-size);
 }
 
+h2 {
+    font-weight: var(--font-secondary-bold);
+    font-size: var(--text-desktop-h2-size);
+}
+
+.read-more-link > a {
+    font-weight: var(--font-secondary-normal);
+}
+
+
+
 @media (max-width: 390px) {
     h3 {
         font-size: var(--text-mobile-h3-size);
+    }
+    h2 {
+        font-size: var(--text-mobile-h2-size);
     }
     h1 {
         font-size: var(--text-mobile-h1-size);

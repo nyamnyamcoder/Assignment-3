@@ -18,6 +18,9 @@
     --padding-btn-tb-mobile: 
   }
   
+p {
+    padding: var(--padding-extra-small-desktop) 0;
+}
 
 .notification {
     padding: var(--padding-extra-small-desktop) 0;
@@ -27,19 +30,15 @@ nav {
     padding: var(--padding-small-desktop) var(--padding-side-desktop);
 } 
 
-.hero-section {
+.hero-section, .about-section {
     padding: var(--padding-medium-desktop) var(--padding-side-desktop);
 }
 
-.hero-content-wrapper {
+.hero-content-wrappe, .about-content-wrapper {
     padding: 0 var(--padding-side-desktop);
 }
 .btn {
     padding: var(--padding-btn-tb-desktop) var(--padding-btn-lr-desktop);
-}
-
-.about-section {
-    padding: var(--padding-medium-desktop) var(--padding-side-desktop);
 }
 
 @media (max-width: 390px) {
@@ -51,11 +50,11 @@ nav {
         padding: var(--padding-small-mobile) var(--padding-side-mobile);
     } 
 
-    .hero-section {
+    .hero-section, .about-section {
         padding: var(--padding-medium-mobile) var(--padding-side-mobile);
     }
 
-    .hero-content-wrapper {
+    .hero-content-wrapper, .about-content-wrapper {
         padding: 0;
     }
 

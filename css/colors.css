@@ -9,6 +9,7 @@
 
 body {
     background-color: var(--color-white);
+    color: var(--color-dark-green);
 
 }
 a, a:visited, a:hover, a:active {
@@ -30,9 +31,6 @@ nav {
     color: var(--color-white);
 }
 
-.heading--green {
-    color: var(--color-dark-green);
-}
 .p--white {
     color: var(--color-white);
 }

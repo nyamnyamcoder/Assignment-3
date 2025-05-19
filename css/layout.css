@@ -69,6 +69,7 @@ nav {
   display: grid;
   grid-template-columns: 7fr 5fr;
   height: 70vh;
+  max-height: 600px;
 }
 
 .hero-content-wrapper {
@@ -100,7 +101,7 @@ nav {
 .about-section {
   display: grid;
   grid-template-columns: 6fr 6fr;
-  height: 40vh;
+  height: 30vh;
 }
 
 .about-image {
