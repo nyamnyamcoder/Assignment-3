@@ -30,15 +30,19 @@ nav {
     padding: var(--padding-small-desktop) var(--padding-side-desktop);
 } 
 
-.hero-section, .about-section {
+.hero-section, .about-section, .best-seller-section {
     padding: var(--padding-medium-desktop) var(--padding-side-desktop);
 }
 
-.hero-content-wrappe, .about-content-wrapper {
+.hero-content-wrapper, .about-content-wrapper {
     padding: 0 var(--padding-side-desktop);
 }
 .btn {
     padding: var(--padding-btn-tb-desktop) var(--padding-btn-lr-desktop);
+}
+
+.product-cards-wrapper-row {
+    gap: var(--padding-small-desktop);
 }
 
 @media (max-width: 390px) {
@@ -50,7 +54,7 @@ nav {
         padding: var(--padding-small-mobile) var(--padding-side-mobile);
     } 
 
-    .hero-section, .about-section {
+    .hero-section, .about-section, .best-seller-section {
         padding: var(--padding-medium-mobile) var(--padding-side-mobile);
     }
 
@@ -61,4 +65,9 @@ nav {
     .about-section {
         padding: var(--padding-medium-mobile) var(--padding-side-mobile);
     }
+
+    .product-cards-wrapper-row {
+        gap: var(--padding-small-mobile);
+    }
+
 }
