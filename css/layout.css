@@ -6,6 +6,9 @@
   border: 1px solid red;
 }
 
+:root {
+  --gap-section-tilte-content: 1rem;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -25,7 +28,6 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  padding: 1rem;
 }
 
 .nav-links-ul{
@@ -110,12 +112,20 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  gap: var(--gap-section-tilte-content);
 }
+
 
 .product-cards-wrapper-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .product-image {

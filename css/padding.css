@@ -54,6 +54,10 @@ nav {
         padding: var(--padding-small-mobile) var(--padding-side-mobile);
     } 
 
+    p {
+        padding: var(--padding-extra-small-mobile) 0;
+    }
+
     .hero-section, .about-section, .best-seller-section {
         padding: var(--padding-medium-mobile) var(--padding-side-mobile);
     }
