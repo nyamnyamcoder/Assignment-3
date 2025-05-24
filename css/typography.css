@@ -13,7 +13,8 @@
     --font-secondary-bold: 500;
     --font-secondary-normal: 200;
     /* Base value for font sizes */
-    --text-base-size: 1rem;
+    --text-base-size-desktop: 1rem;
+    --text-base-size-mobile: 0.9rem;
     --text-desktop-letter-spacing: 0.4px;
 
     /* Heading font sizes */
@@ -29,9 +30,13 @@
 
 body {
     font-family: var(--font-primary);
-    font-size: var(--text-base-size);
+    font-size: var(--text-base-size-desktop);
     font-weight: var(--font-primary-normal);
     letter-spacing: var(--text-desktop-letter-spacing);
+}
+
+.material-symbols-outlined {
+    font-size: 2rem !important;
 }
 
 .heading {
@@ -51,7 +56,7 @@ li > a {
 
 #currency-selector {
     font-family: var(--font-primary);
-    font-size: var(--text-base-size);
+    font-size: var(--text-base-size-desktop);
     letter-spacing: var(--text-desktop-letter-spacing);
 }
 
@@ -76,7 +81,7 @@ h2 {
     font-weight: var(--font-secondary-normal);
 }
 
-h3 {
+h3, summary {
     font-weight: var(--font-secondary-bold);
     font-size: var(--text-desktop-h3-size);
 }
@@ -88,11 +93,14 @@ h4 {
 
 
 @media (max-width: 390px) {
+    body {
+        font-size: var(--text-base-size-mobile);
+    }
 
     h4 {
         font-size: var(--text-mobile-h4-size);
     }
-    h3 {
+    h3, summary {
         font-size: var(--text-mobile-h3-size);
     }
     h2 {

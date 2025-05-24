@@ -48,3 +48,14 @@ nav {
     color: var(--color-white);
 }
 
+.category-name {
+    text-shadow: 1px 1px 4px var(--color-black);
+}
+
+details {
+    border-bottom: 2.5px solid  var(--color-dark-green);
+}
+
+details:first-child {
+    border-top: 2.5px solid var(--color-dark-green);
+}
