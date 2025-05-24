@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 390px) {
-    .hero-text {
+    .hero-heading-margin, .about-heading-margin {
         margin-top: var(--margin-mobile-top-bottom);
     }
     .shop-now-cta {

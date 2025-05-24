@@ -31,7 +31,8 @@ nav {
 } 
 
 /* Must add all the sections */
-.hero-section, .about-section, .best-seller-section, .browse-by-category-section, .value-section {
+.hero-section, .about-section, .best-seller-section, 
+.browse-by-category-section, .value-section, .blog-section {
     padding: var(--padding-medium-desktop) var(--padding-side-desktop);
 }
 
@@ -42,11 +43,15 @@ nav {
     padding: var(--padding-btn-tb-desktop) var(--padding-btn-lr-desktop);
 }
 
-.product-cards-wrapper-row, .category-cards-wrapper {
+.product-cards-wrapper-row, .category-cards-wrapper, .blog-cards-wrapper {
     gap: var(--padding-small-desktop);
 }
 
 details {
+    padding: var(--padding-extra-small-desktop) 0;
+}
+
+.value-image-wrapper {
     padding: var(--padding-extra-small-desktop) 0;
 }
 
@@ -64,7 +69,8 @@ details {
     }
 
     /* Must add all the sections */
-    .hero-section, .about-section, .best-seller-section, .browse-by-category-section, .value-section {
+    .hero-section, .about-section, .best-seller-section, 
+    .browse-by-category-section, .value-section, .blog-section {
         padding: var(--padding-medium-mobile) var(--padding-side-mobile);
     }
 

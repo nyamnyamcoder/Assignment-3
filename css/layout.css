@@ -2,12 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box;
-  border: 1px solid red; */
+  box-sizing: border-box;
+  border: 1px solid red;
 }
 
 :root {
-  --gap-section-tilte-content: 1rem;
+  --gap-section-title-content: 1rem;
 }
 
 body {
@@ -86,13 +86,19 @@ nav {
   justify-content: center;
 }
 
-.hero-image-wrapper, .about-image-wrapper, .product-card, .category-card,.value-image-wrapper {
+.hero-image-wrapper, .about-image-wrapper, .product-card, .category-card{
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
-.hero-image, .about-image, .value-image {
+.value-image-wrapper {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image, .about-image, .value-image, .blog-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -117,15 +123,15 @@ nav {
 }
 
 /* Must add all the section with flex-direction column */
-.best-seller-section, .browse-by-category-section {
+.best-seller-section, .browse-by-category-section, .blog-section {
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
 
 /* Must add all the section that has sub-heading */
-.best-seller-section, .browse-by-category-section, .value-section {
-  gap: var(--gap-section-tilte-content);
+.best-seller-section, .browse-by-category-section, .value-section, .blog-section {
+  gap: var(--gap-section-title-content);
 }
 
 .product-cards-wrapper-row, .category-cards-wrapper {
@@ -134,6 +140,7 @@ nav {
   justify-content: space-around;
 }
 
+/* Adding the gap between images and texts */
 .product-card, .category-card {
   position: relative;
   display: flex;
@@ -181,6 +188,46 @@ details[open] .accordion-icon {
   transform: rotate(180deg);
 }
 
+
+.blog-cards-wrapper {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  justify-content: space-around;
+}
+
+.blog-card {
+  height: 400px;
+  width: auto;
+  overflow: hidden;
+}
+
+.blog-card {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.blog-card::before {
+  content: '';
+  background: rgba(0,0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%);
+  opacity: 0.7; 
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 0.5em 0.5em;
+  z-index: 1;
+}
+
+.blog-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  z-index: 2;
+}
+
 @media (max-width: 390px) {
 
   body {
@@ -209,7 +256,7 @@ details[open] .accordion-icon {
     justify-self: start;
   }
 
-  .hero-section, .about-section, .value-section{
+  .hero-section, .about-section, .value-section, .blog-cards-wrapper{
     display: flex;
     flex-direction: column;
   }
@@ -224,6 +271,14 @@ details[open] .accordion-icon {
 
   .product-cards-wrapper-row, .category-cards-wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .value-image-wrapper {
+    height: 200px;
+  }
+
+  .blog-card {
+    height: 200px;
   }
 
 }
