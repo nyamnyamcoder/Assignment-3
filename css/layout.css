@@ -2,8 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  border: 1px solid red;
+  /* box-sizing: border-box;
+  border: 1px solid red; */
 }
 
 :root {
@@ -45,7 +45,7 @@ nav {
   white-space: nowrap;
 }
 
-.btn {
+.btn, .btn--green {
   width: fit-content;
   height: auto;
   display: flex;
@@ -122,15 +122,16 @@ nav {
   height: auto;
 }
 
-/* Must add all the section with flex-direction column */
-.best-seller-section, .browse-by-category-section, .blog-section {
+/* Must add all the sections with flex-direction column */
+.best-seller-section, .browse-by-category-section, .blog-section, .review-section {
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
 
-/* Must add all the section that has sub-heading */
-.best-seller-section, .browse-by-category-section, .value-section, .blog-section {
+/* Must add all the sections that has sub-heading */
+.best-seller-section, .browse-by-category-section, 
+.value-section, .blog-section, .review-section {
   gap: var(--gap-section-title-content);
 }
 
@@ -167,6 +168,7 @@ nav {
   grid-template-columns:1fr 2fr;
   justify-content: space-around;
 }
+
 summary {
   list-style: none;
   display: flex;
@@ -228,6 +230,53 @@ details[open] .accordion-icon {
   z-index: 2;
 }
 
+.review-cards-wrapper {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  justify-content: space-around;
+}
+
+.review-card {
+  height: auto;
+}
+
+.review-stars {
+  display: flex;
+  gap: 0.2rem;
+}
+.review-star-and-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.review-shop-now-btn {
+  align-self: center;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.footer-right-side {
+  grid-area: 1 / 2 / span 3 / span 2;
+
+}
+
+.footer-bottom-side {
+  grid-area: 2 / 1 / span 2 / span 1;
+}
+
+.form-input-wrapper, .social-media-icon-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.email-input{
+  border-radius: 10px;
+}
+
 @media (max-width: 390px) {
 
   body {
@@ -256,7 +305,8 @@ details[open] .accordion-icon {
     justify-self: start;
   }
 
-  .hero-section, .about-section, .value-section, .blog-cards-wrapper{
+  .hero-section, .about-section, .value-section, 
+  .blog-cards-wrapper, .review-cards-wrapper, footer{
     display: flex;
     flex-direction: column;
   }
@@ -279,6 +329,10 @@ details[open] .accordion-icon {
 
   .blog-card {
     height: 200px;
+  }
+
+  .review-card-hidden-mobile {
+    display: none;
   }
 
 }

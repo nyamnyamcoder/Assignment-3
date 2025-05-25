@@ -48,6 +48,21 @@ nav {
     color: var(--color-white);
 }
 
+.btn--green {
+    background-color: var(--color-dark-green);
+    border: none;
+    color: var(--color-white);
+}
+
+.email-input {
+    background-color: var(--color-white);
+    border: none;
+}
+
+.email-input::placeholder {
+    color: var(--color-light-green); 
+}
+
 .category-name {
     text-shadow: 1px 1px 4px var(--color-black);
 }
@@ -58,4 +73,12 @@ details {
 
 details:first-child {
     border-top: 2.5px solid var(--color-dark-green);
+}
+
+.review-card {
+    border: 3px solid var(--color-dark-green);
+}
+
+footer {
+    background-color: var(--color-light-green);
 }
