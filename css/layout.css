@@ -2,8 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box;
-  border: 1px solid red; */
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -273,8 +273,42 @@ footer {
   flex-direction: row;
 }
 
-.email-input{
+.input{
   border-radius: 10px;
+  width: auto;
+}
+
+.popup-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-function {
+  display: flex;
+  align-items: center;
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1; 
+}
+
+.search-input {
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.close-popup {
+  flex-shrink: 0;
+  width: auto; 
 }
 
 @media (max-width: 390px) {

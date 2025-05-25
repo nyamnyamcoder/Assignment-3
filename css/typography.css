@@ -79,7 +79,7 @@ h1 {
     font-size: var(--text-desktop-h3-size);
 }
 
-.btn--green, .email-input {
+.btn--green, .input {
     font-family: var(--font-primary);
     font-size: var(--text-base-size-desktop);
 }
@@ -135,7 +135,7 @@ h4 {
         font-size: var(--text-mobile-h3-size);
     }
 
-    .btn--green, .email-input {
+    .btn--green, .input {
         font-size: var(--text-base-size-mobile);
     }
 

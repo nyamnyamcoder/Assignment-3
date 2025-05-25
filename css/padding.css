@@ -34,13 +34,14 @@ nav {
 
 /* Must add all the sections */
 .hero-section, .about-section, .best-seller-section, 
-.browse-by-category-section, .value-section, .blog-section, .review-section, footer {
+.browse-by-category-section, .value-section, .blog-section, 
+.review-section, footer, .popup {
     padding: var(--padding-medium-desktop) var(--padding-side-desktop);
 }
 
 /* Must add all the sections with gap between items in row */
 .product-cards-wrapper-row, .category-cards-wrapper,
- .blog-cards-wrapper, .review-cards-wrapper, footer {
+ .blog-cards-wrapper, .review-cards-wrapper, footer, .search-function {
     gap: var(--padding-small-desktop);
 }
 
@@ -51,8 +52,13 @@ nav {
     padding: var(--padding-btn-tb) var(--padding-btn-lr);
 }
 
-.btn--green, .email-input {
+.btn--green, .input {
     padding: var(--padding-btn-green-tb) var(--padding-btn-green-lr);
+}
+
+/* Add padding to acoomodate search icon */
+.search-input {
+    padding-left: 3.5rem;
 }
 
 details {
@@ -86,7 +92,8 @@ details {
 
     /* Must add all the sections */
     .hero-section, .about-section, .best-seller-section, 
-    .browse-by-category-section, .value-section, .blog-section, .review-section, footer {
+    .browse-by-category-section, .value-section, .blog-section, 
+    .review-section, footer, .popup {
         padding: var(--padding-medium-mobile) var(--padding-side-mobile);
     }
 

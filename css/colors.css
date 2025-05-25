@@ -54,12 +54,16 @@ nav {
     color: var(--color-white);
 }
 
-.email-input {
+.input {
     background-color: var(--color-white);
     border: none;
 }
 
-.email-input::placeholder {
+.search-input {
+    border: 2.5px solid var(--color-dark-green);
+}
+
+.input::placeholder {
     color: var(--color-light-green); 
 }
 
@@ -76,7 +80,7 @@ details:first-child {
 }
 
 .review-card {
-    border: 3px solid var(--color-dark-green);
+    border: 2.5px solid var(--color-dark-green);
 }
 
 footer {
