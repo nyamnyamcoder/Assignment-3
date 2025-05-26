@@ -90,3 +90,7 @@ footer {
 .popup-content {
     background-color: var(--color-white);
 }
+
+.cart-heading-wrapper, .cart-item {
+    border-bottom: 2.5px solid var(--color-dark-green);
+}

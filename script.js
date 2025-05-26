@@ -1,4 +1,4 @@
-// Get DOM elements
+// get DOM elements for search
 const searchIcon = document.getElementById('search-icon');
 const searchPopup = document.getElementById('search-popup');
 const closePopup = document.querySelector('.close-popup');
@@ -7,13 +7,12 @@ const searchInput = document.querySelector('.search-input');
 const popularSearches = document.querySelector('.popular-searches');
 const searchResults = document.querySelector('.search-results-suggesion');
 
-// Function to blur/darken background content
-function blurBackground() {
-    document.body.style.filter = 'blur(3px) brightness(0.7)';
-    document.body.style.transition = 'filter 0.3s ease';
-    // Prevent body scrolling when popup is open
-    document.body.style.overflow = 'hidden';
-}
+// get DOM elements for cart
+const cartIcon = document.getElementById('cart-icon');
+const cartPopup = document.getElementById('cart-popup');
+const cartClosePopup = cartPopup.querySelector('.close-popup');
+const deleteCartItems = document.querySelectorAll('.delete-cart-item');
+
 
 // show search popup when search icon is clicked
 searchIcon.addEventListener('click', () => {
@@ -50,5 +49,29 @@ searchInput.addEventListener('input', () => {
 searchPopup.addEventListener('click', (e) => {
     if (e.target === searchPopup) {
         searchPopup.classList.add('hidden');
+    }
+});
+
+// show cart popup when cart icon is clicked
+cartIcon.addEventListener('click', () => {
+    cartPopup.classList.remove('hidden');
+});
+
+// close popup with x
+cartClosePopup.addEventListener('click', () => {
+    cartPopup.classList.add('hidden');
+});
+
+// delete cart items
+deleteCartItems.forEach(deleteBtn => {
+    deleteBtn.addEventListener('click', () => {
+        deleteBtn.closest('.cart-item').remove();
+    });
+});
+
+// close popup when clicking outside
+cartPopup.addEventListener('click', (e) => {
+    if (e.target === cartPopup) {
+        cartPopup.classList.add('hidden');
     }
 });

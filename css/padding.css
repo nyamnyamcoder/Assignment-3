@@ -78,6 +78,12 @@ details {
     gap: var(--padding-extra-small-desktop);
 }
 
+
+.cart-subtotal-wrapper {
+    padding-top: var(--padding-large-desktop);
+}
+  
+
 @media (max-width: 390px) {
     .notification{
         padding: var(--padding-extra-small-mobile) 0;
@@ -129,5 +135,9 @@ details {
 
     .form-input-wrapper, .social-media-icon-wrapper {
         gap: var(--padding-extra-small-mobile);
+    }
+
+    .cart-subtotal-wrapper {
+        padding-top: var(--padding-large-mobile);
     }
 }
