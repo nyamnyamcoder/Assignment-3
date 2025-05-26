@@ -86,3 +86,7 @@ details:first-child {
 footer {
     background-color: var(--color-light-green);
 }
+
+.popup-content {
+    background-color: var(--color-white);
+}
