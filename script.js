@@ -1,7 +1,7 @@
 // get DOM elements for search
 const searchIcon = document.getElementById('search-icon');
 const searchPopup = document.getElementById('search-popup');
-const closePopup = document.querySelector('.close-popup');
+const searchClosePopup = searchPopup.querySelector('.close-popup');
 const searchInputWrapper = document.querySelector('.search-input-wrapper');
 const searchInput = document.querySelector('.search-input');
 const popularSearches = document.querySelector('.popular-searches');
@@ -13,7 +13,12 @@ const cartPopup = document.getElementById('cart-popup');
 const cartClosePopup = cartPopup.querySelector('.close-popup');
 const deleteCartItems = document.querySelectorAll('.delete-cart-item');
 
+// get DOM elements for hamburger menu
+const hamburgerMenuIcon = document.getElementById('menu-icon');
+const hamburgerMenuPopup = document.getElementById('hamburger-menu-popup');
+const hamburgerMenuClosePopup = hamburgerMenuPopup.querySelector('.close-popup');
 
+// Search popup
 // show search popup when search icon is clicked
 searchIcon.addEventListener('click', () => {
     searchPopup.classList.remove('hidden');
@@ -23,7 +28,7 @@ searchIcon.addEventListener('click', () => {
 });
 
 // close popup with x 
-closePopup.addEventListener('click', () => {
+searchClosePopup.addEventListener('click', () => {
     searchPopup.classList.add('hidden');
 });
 
@@ -52,6 +57,7 @@ searchPopup.addEventListener('click', (e) => {
     }
 });
 
+// Cart popup
 // show cart popup when cart icon is clicked
 cartIcon.addEventListener('click', () => {
     cartPopup.classList.remove('hidden');
@@ -73,5 +79,23 @@ deleteCartItems.forEach(deleteBtn => {
 cartPopup.addEventListener('click', (e) => {
     if (e.target === cartPopup) {
         cartPopup.classList.add('hidden');
+    }
+});
+
+// Hamburger menu popup (on mobile version only)
+// show popup when clicked on hamburger menu icon
+hamburgerMenuIcon.addEventListener('click', () => {
+    hamburgerMenuPopup.classList.remove('hidden');
+});
+
+// close popup with x
+hamburgerMenuClosePopup.addEventListener('click', () => {
+    hamburgerMenuPopup.classList.add('hidden');
+});
+
+// close popup when clicking outside
+hamburgerMenuPopup.addEventListener('click', (e) => {
+    if (e.target === hamburgerMenuPopup) {
+        hamburgerMenuPopup.classList.add('hidden');
     }
 });

@@ -136,8 +136,9 @@ nav {
   height: auto;
 }
 
-/* Must add all the sections with flex-direction column */
-.best-seller-section, .browse-by-category-section, .blog-section, .review-section {
+/* Must add all the sections & divs with flex-direction column */
+.best-seller-section, .browse-by-category-section, .blog-section, .review-section, 
+.hamburger-menu-bottom-half, .hamburger-menu-top-half, .hamburger-menu-bottom-half {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -145,7 +146,8 @@ nav {
 
 /* Must add all the sections that has sub-heading */
 .best-seller-section, .browse-by-category-section, 
-.value-section, .blog-section, .review-section, .popup-content, .popular-searches {
+.value-section, .blog-section, .review-section, .popup-content, 
+.popular-searches {
   gap: var(--gap-section-title-content);
 }
 
@@ -379,6 +381,17 @@ footer {
   top: 1rem;
 }
 
+.hamburger-menu-currency-selector, .hamburger-menu-header, .ham-menu-shop-by-category-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+#hamburger-menu-popup .popup-content {
+  width: 60%;
+  height: 100%;
+}
 
 @media (max-width: 390px) {
 
@@ -394,7 +407,7 @@ footer {
     display: none;
   }
 
-  .currency-selecter-wrapper {
+  .nav-currency-selecter-wrapper {
     display: none;
     height: auto;
   }
@@ -442,8 +455,10 @@ footer {
     display: none;
   }
 
-  #cart-popup {
+  #cart-popup .popup-content {
     width: 100%;
+    right: 0;
+    top: 0;
   }
 
 }

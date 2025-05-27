@@ -82,7 +82,15 @@ details {
 .cart-subtotal-wrapper {
     padding-top: var(--padding-large-desktop);
 }
-  
+
+.hamburger-menu-top-half, .hamburger-menu-bottom-half {
+    gap: var(--padding-medium-mobile);
+    padding-bottom: var(--padding-medium-mobile);
+}
+
+.hamburger-menu-currency-selector {
+    padding-bottom: var(--padding-medium-mobile);
+}
 
 @media (max-width: 390px) {
     .notification{

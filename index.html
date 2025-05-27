@@ -53,21 +53,21 @@
                 </button>
                 
                 <!-- Currency selecter -->
-                <div class="currency-selecter-wrapper">
-                    <select id="currency-selector" class="btn--icon-white">
-                    <option value="AUD">AUD</option>
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="JPY">JPY</option>
-                    <option value="KRW">KRW</option>
-                    <option value="RMB">RMB</option>
+                <div class="nav-currency-selecter-wrapper">
+                    <select id="nav-currency-selector" class="btn--icon-white">
+                    <option value="AUD">AUD ($)</option>
+                    <option value="USD">USD ($)</option>
+                    <option value="EUR">EUR (€)</option>
+                    <option value="JPY">JPY (¥)</option>
+                    <option value="KRW">KRW (₩)</option>
+                    <option value="RMB">RMB (¥)</option>
                     </select>
                 </div>
             </div> 
     
         </nav>
 
-        <!-- Pop ups -->
+    <!-- Pop ups -->
 
      <!-- Search pop up -->
     <div id="search-popup" class="popup popup--overlay hidden">
@@ -309,7 +309,7 @@
                     <img class="value-image" src="images/Ethical production.webp" alt="Colorful clothing for children.">
                 </div>
             </details>
-
+            
             <details>
                 <summary class="heading">
                     Fast shipping
@@ -442,7 +442,60 @@
         </div>
     </footer>
 
-    
+    <!-- Hamburger menu popup -->
+    <div id="hamburger-menu-popup" class="popup popup--overlay hidden">
+        <div class="popup-content">
+            <div class="hamburger-menu-header">
+                <img class="brand-logo" src="images/Marlow and Mae - black logo.webp" alt="Marlow and Mae logo in cursive font.">
+                <span class="material-symbols-outlined close-popup">close</span>
+            </div>
+            <div class="hamburger-menu-top-half">
+                <a>
+                    <h3 class="heading">Home</h3>
+                </a>
+                <a>
+                    <h3 class="heading">New arrivals</h3>
+                </a>
+                <a>
+                    <h3 class="heading">Pre-loved</h3>
+                </a>
+
+                <a>
+                    <div class="ham-menu-shop-by-category-wrapper">
+                        <h3 class="heading">Shop by category</h3>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </div>
+                </a>
+
+            </div>
+            <div class="hamburger-menu-bottom-half">
+                <a>
+                    <h3 class="heading">About us</h3>
+                </a>
+                <a>
+                    <h3 class="heading">Our values</h3>
+                </a>
+                <a>
+                    <h3 class="heading">Fabric care tips</h3>
+                </a>
+            </div>
+            <div class="hamburger-menu-currency-selector">
+                <h3 class="heading">Currency: </h3>
+                <!-- Currency selecter -->
+                <div class="ham-menu-currency-selecter-wrapper">
+                    <select id="ham-menu-currency-selector" class="btn--icon-green">
+                    <option value="AUD">AUD ($)</option>
+                    <option value="USD">USD ($)</option>
+                    <option value="EUR">EUR (€)</option>
+                    <option value="JPY">JPY (¥)</option>
+                    <option value="KRW">KRW (₩)</option>
+                    <option value="RMB">RMB (¥)</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <!-- Java script -->
     <script src="script.js"></script>
 </body>

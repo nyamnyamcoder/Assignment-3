@@ -61,9 +61,15 @@ li > a {
     text-decoration: none;
 }
 
-#currency-selector {
+#nav-currency-selector {
     font-family: var(--font-primary);
     font-size: var(--text-base-size-desktop);
+    letter-spacing: var(--text-desktop-letter-spacing);
+}
+
+#ham-menu-currency-selector {
+    font-family: var(--font-secondary);
+    font-size: var(--text-mobile-h3-size);
     letter-spacing: var(--text-desktop-letter-spacing);
 }
 

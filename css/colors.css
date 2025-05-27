@@ -42,6 +42,13 @@ nav {
     border: none;
 }
 
+.btn--icon-green {
+    color: var(--color-dark-green);
+    background: none;
+    padding: 0;
+    border: none;
+}
+
 .btn--brown {
     background-color: var(--color-brown);
     border: none;
@@ -92,5 +99,9 @@ footer {
 }
 
 .cart-heading-wrapper, .cart-item {
+    border-bottom: 2.5px solid var(--color-dark-green);
+}
+
+.hamburger-menu-top-half, .hamburger-menu-bottom-half, .hamburger-menu-currency-selector {
     border-bottom: 2.5px solid var(--color-dark-green);
 }
