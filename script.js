@@ -50,6 +50,16 @@ searchInput.addEventListener('input', () => {
     }
 });
 
+// Dynamically takes in the search terms
+searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        const searchTerm = searchInput.value.trim();
+        if (searchTerm) {
+            window.location.href = `searchresults.html?search=${encodeURIComponent(searchTerm)}`;
+        }
+    }
+});
+
 // close popup when clicking outside
 searchPopup.addEventListener('click', (e) => {
     if (e.target === searchPopup) {

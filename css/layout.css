@@ -139,7 +139,7 @@ nav {
 /* Must add all the sections & divs with flex-direction column */
 .best-seller-section, .browse-by-category-section, .blog-section, .review-section, 
 .hamburger-menu-bottom-half, .hamburger-menu-top-half, .hamburger-menu-bottom-half,
-.product-listing, .product-listings-wrapper {
+.product-listing, .product-listings-wrapper, .search-result {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -148,7 +148,7 @@ nav {
 /* Must add all the sections that has sub-heading */
 .best-seller-section, .browse-by-category-section, 
 .value-section, .blog-section, .review-section, .popup-content, 
-.popular-searches, .product-listing {
+.popular-searches, .product-listing, .search-result {
   gap: var(--gap-section-title-content);
 }
 
@@ -398,6 +398,12 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.search-result-header-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 390px) {
@@ -470,6 +476,10 @@ footer {
 
   .product-listing-header {
     flex-direction: column;
+  }
+
+  .product-listing-header {
+    align-items: start;
   }
 
 }
