@@ -35,7 +35,7 @@ nav {
 /* Must add all the sections */
 .hero-section, .about-section, .best-seller-section, 
 .browse-by-category-section, .value-section, .blog-section, 
-.review-section, footer, .popup-content {
+.review-section, footer, .popup-content, .product-listing {
     padding: var(--padding-medium-desktop) var(--padding-side-desktop);
 }
 
@@ -92,6 +92,10 @@ details {
     padding-bottom: var(--padding-medium-mobile);
 }
 
+.product-listings-wrapper {
+    gap: var(--padding-small-desktop);
+}
+
 @media (max-width: 390px) {
     .notification{
         padding: var(--padding-extra-small-mobile) 0;
@@ -108,7 +112,7 @@ details {
     /* Must add all the sections */
     .hero-section, .about-section, .best-seller-section, 
     .browse-by-category-section, .value-section, .blog-section, 
-    .review-section, footer, .popup-content {
+    .review-section, footer, .popup-content, .product-listing {
         padding: var(--padding-medium-mobile) var(--padding-side-mobile);
     }
 

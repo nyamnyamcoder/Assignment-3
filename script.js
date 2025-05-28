@@ -1,4 +1,4 @@
-// get DOM elements for search
+// get DOM elements for search icon
 const searchIcon = document.getElementById('search-icon');
 const searchPopup = document.getElementById('search-popup');
 const searchClosePopup = searchPopup.querySelector('.close-popup');
@@ -7,13 +7,13 @@ const searchInput = document.querySelector('.search-input');
 const popularSearches = document.querySelector('.popular-searches');
 const searchResults = document.querySelector('.search-results-suggesion');
 
-// get DOM elements for cart
+// get DOM elements for cart icon
 const cartIcon = document.getElementById('cart-icon');
 const cartPopup = document.getElementById('cart-popup');
 const cartClosePopup = cartPopup.querySelector('.close-popup');
 const deleteCartItems = document.querySelectorAll('.delete-cart-item');
 
-// get DOM elements for hamburger menu
+// get DOM elements for hamburger menu icon
 const hamburgerMenuIcon = document.getElementById('menu-icon');
 const hamburgerMenuPopup = document.getElementById('hamburger-menu-popup');
 const hamburgerMenuClosePopup = hamburgerMenuPopup.querySelector('.close-popup');
@@ -98,4 +98,35 @@ hamburgerMenuPopup.addEventListener('click', (e) => {
     if (e.target === hamburgerMenuPopup) {
         hamburgerMenuPopup.classList.add('hidden');
     }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const shopNowButtons = document.querySelectorAll('.shop-now-cta');
+    
+    shopNowButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        window.location.href = 'productlistings.html';
+      });
+    });
+});
+
+// Dynamically update the heading of product listings page
+document.addEventListener('DOMContentLoaded', function() {
+    // If redirected from shop now cta buttons
+    const shopNowButtons = document.querySelectorAll('.shop-now-cta');
+    shopNowButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            window.location.href = 'productlistings.html?title=Shop All';
+        });
+    });
+
+    // If redirected from category cards
+    const categoryCards = document.querySelectorAll('.category-card');
+    categoryCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            e.preventDefault();
+            const categoryName = card.querySelector('.category-name').textContent.trim();
+            window.location.href = `productlistings.html?title=Shop ${categoryName}`;
+        });
+    });
 });

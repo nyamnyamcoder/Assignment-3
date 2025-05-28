@@ -85,6 +85,12 @@ h1 {
     font-size: var(--text-desktop-h3-size);
 }
 
+.filter-wrapper > .btn--icon-green {
+    font-family: var(--font-primary);
+    font-size: var(--text-base-size-desktop); 
+    font-weight: var(--font-primary-normal);
+}
+
 .btn--green, .input {
     font-family: var(--font-primary);
     font-size: var(--text-base-size-desktop);

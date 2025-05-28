@@ -49,6 +49,13 @@ nav {
     border: none;
 }
 
+.filter-wrapper > .btn--icon-green {
+    color: var(--color-dark-green);
+    padding: 0;
+    border: 2px solid var(--color-dark-green);
+    border-radius: 5px;
+}
+
 .btn--brown {
     background-color: var(--color-brown);
     border: none;
