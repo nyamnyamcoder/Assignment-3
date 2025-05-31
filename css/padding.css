@@ -35,20 +35,31 @@ nav {
 /* Must add all the sections */
 .hero-section, .about-section, .best-seller-section, 
 .browse-by-category-section, .value-section, .blog-section, 
-.review-section, footer, .popup-content, .product-listing, .search-result {
+.review-section, footer, .popup-content, .product-listing, 
+.search-result, .product-information, .product-features, .similar-items {
     padding: var(--padding-medium-desktop) var(--padding-side-desktop);
+}
+
+.product-content-wrapper > p {
+    padding: 0;
 }
 
 /* Must add all the sections with gap between items in row */
 .product-cards-wrapper-row, .category-cards-wrapper,
  .blog-cards-wrapper, .review-cards-wrapper, footer, 
- .search-function, .search-suggestion-wrapper {
+ .search-function, .search-suggestion-wrapper, .image-view-wrapper, 
+ .product-images-wrapper, .product-content-wrapper, .product-feature-cards-wrapper {
     gap: var(--padding-small-desktop);
 }
 
-.hero-content-wrapper, .about-content-wrapper {
+.size-option-wrapper, .color-option-wrapper {
+    gap: var(--padding-extra-small-desktop);
+}
+
+.hero-content-wrapper, .about-content-wrapper, .product-content-wrapper {
     padding: 0 var(--padding-side-desktop);
 }
+
 .btn {
     padding: var(--padding-btn-tb) var(--padding-btn-lr);
 }
@@ -57,7 +68,7 @@ nav {
     padding: var(--padding-btn-green-tb) var(--padding-btn-green-lr);
 }
 
-/* Add padding to acoomodate search icon */
+/* Add padding to acommodate search icon */
 .search-input {
     padding-left: 3.5rem;
 }
@@ -95,6 +106,9 @@ details {
 .product-listings-wrapper {
     gap: var(--padding-small-desktop);
 }
+.size-option {
+    padding: var(--padding-small-desktop);
+}
 
 @media (max-width: 390px) {
     .notification{
@@ -112,18 +126,17 @@ details {
     /* Must add all the sections */
     .hero-section, .about-section, .best-seller-section, 
     .browse-by-category-section, .value-section, .blog-section, 
-    .review-section, footer, .popup-content, .product-listing, .search-result {
+    .review-section, footer, .popup-content, .product-listing, .search-result, 
+    .product-information, .product-features, .similar-items {
         padding: var(--padding-medium-mobile) var(--padding-side-mobile);
     }
-
 
     /* Must add all the sections with gap between items in row */
     .product-cards-wrapper-row, .category-cards-wrapper,
     .blog-cards-wrapper, .review-cards-wrapper, footer, 
-    .search-function, .search-suggestion-wrapper {
+    .search-function, .search-suggestion-wrapper, .product-content-wrapper {
         gap: var(--padding-small-mobile);
     }
-
 
     .hero-content-wrapper, .about-content-wrapper {
         padding: 0;
@@ -151,5 +164,13 @@ details {
 
     .cart-subtotal-wrapper {
         padding-top: var(--padding-large-mobile);
+    }
+
+    .size-option-wrapper, .color-option-wrapper {
+        gap: var(--padding-extra-small-mobile);
+    }
+
+    .product-content-wrapper {
+        padding: 0;
     }
 }

@@ -122,7 +122,9 @@ h4 {
 .bi {
     font-size: 2.5rem;
 }
-
+.size-option--clicked {
+    font-weight: var(--font-primary-bold);
+}
 @media (max-width: 390px) {
     body {
         font-size: var(--text-base-size-mobile);

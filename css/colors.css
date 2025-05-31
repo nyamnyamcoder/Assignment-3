@@ -112,3 +112,49 @@ footer {
 .hamburger-menu-top-half, .hamburger-menu-bottom-half, .hamburger-menu-currency-selector {
     border-bottom: 2.5px solid var(--color-dark-green);
 }
+
+.quantity-selector {
+    border: 2.5px solid var(--color-dark-green);
+}
+
+.size-option {
+    border: 1px solid var(--color-dark-green);
+}
+
+.size-option:hover, .size-option--clicked  {
+    box-shadow: inset 0 0 0 1px var(--color-dark-green); 
+}
+
+.side-image:hover {
+    border: 3px solid var(--color-dark-green);
+}
+
+.side-image--clicked {
+    border: 3px solid var(--color-dark-green);
+    opacity: 1;
+}
+
+
+.side-image--unclicked {
+    opacity: 0.5;
+}
+
+.color-option {
+    border: 1px solid var(--color-dark-green);
+    border-radius: 50px;
+}
+
+.color-option--white {
+    background-color: #FFFFFF;
+}
+
+.color-option--pink {
+    background-color: #D279A4;
+}
+
+.color-option:hover, .color-option--clicked {
+    box-shadow: inset 0 0 0 1px var(--color-dark-green); 
+}
+
+
+

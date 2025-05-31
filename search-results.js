@@ -7,5 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (searchTerm && searchTermElement) {
         searchTermElement.textContent = `"${searchTerm}"`;
+    } else {
+        searchTermElement.textContent = "Shop All";
     }
 });
