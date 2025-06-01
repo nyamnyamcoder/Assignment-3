@@ -1,3 +1,5 @@
+// The code in this file has been generated using Claude.ai (https://claude.ai)
+
 // get DOM elements for search icon
 const searchIcon = document.getElementById('search-icon');
 const searchPopup = document.getElementById('search-popup');

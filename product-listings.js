@@ -1,3 +1,5 @@
+// The code in this file has been generated using Claude.ai (https://claude.ai)
+
 // Dynamically change the heading of the page
 // based on where user redirected from
 document.addEventListener('DOMContentLoaded', function() {

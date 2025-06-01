@@ -48,8 +48,12 @@ nav {
 .product-cards-wrapper-row, .category-cards-wrapper,
  .blog-cards-wrapper, .review-cards-wrapper, footer, 
  .search-function, .search-suggestion-wrapper, .image-view-wrapper, 
- .product-images-wrapper, .product-content-wrapper, .product-feature-cards-wrapper {
+ .product-images-wrapper, .product-content-wrapper, .product-feature-cards-wrapper, .cart-items-wrapper {
     gap: var(--padding-small-desktop);
+}
+
+.cart-item {
+    padding-bottom: var(--padding-small-desktop);
 }
 
 .size-option-wrapper, .color-option-wrapper {
@@ -91,7 +95,7 @@ details {
 
 
 .cart-subtotal-wrapper {
-    padding-top: var(--padding-large-desktop);
+    padding-top: var(--padding-small-desktop);
 }
 
 .hamburger-menu-top-half, .hamburger-menu-bottom-half {
@@ -134,8 +138,12 @@ details {
     /* Must add all the sections with gap between items in row */
     .product-cards-wrapper-row, .category-cards-wrapper,
     .blog-cards-wrapper, .review-cards-wrapper, footer, 
-    .search-function, .search-suggestion-wrapper, .product-content-wrapper {
+    .search-function, .search-suggestion-wrapper, .product-content-wrapper, .cart-items-wrapper, .popup-content {
         gap: var(--padding-small-mobile);
+    }
+
+    .cart-item {
+        padding-bottom: var(--padding-small-mobile);
     }
 
     .hero-content-wrapper, .about-content-wrapper {
@@ -163,7 +171,7 @@ details {
     }
 
     .cart-subtotal-wrapper {
-        padding-top: var(--padding-large-mobile);
+        padding-top: var(--padding-small-mobile);
     }
 
     .size-option-wrapper, .color-option-wrapper {
