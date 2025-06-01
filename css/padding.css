@@ -36,7 +36,8 @@ nav {
 .hero-section, .about-section, .best-seller-section, 
 .browse-by-category-section, .value-section, .blog-section, 
 .review-section, footer, .popup-content, .product-listing, 
-.search-result, .product-information, .product-features, .similar-items {
+.search-result, .product-information, .product-features, .similar-items, .cart-content-wrapper,
+.payment-page-wrapper, .order-confirmation-section {
     padding: var(--padding-medium-desktop) var(--padding-side-desktop);
 }
 
@@ -44,12 +45,26 @@ nav {
     padding: 0;
 }
 
+.order-confirmation-section {
+    gap: var(--padding-medium-desktop);
+}
+
+.order-summary-section > .popup-content {
+    padding: 0 0 0 var(--padding-side-desktop);
+}
+
 /* Must add all the sections with gap between items in row */
 .product-cards-wrapper-row, .category-cards-wrapper,
  .blog-cards-wrapper, .review-cards-wrapper, footer, 
  .search-function, .search-suggestion-wrapper, .image-view-wrapper, 
- .product-images-wrapper, .product-content-wrapper, .product-feature-cards-wrapper, .cart-items-wrapper {
+ .product-images-wrapper, .product-content-wrapper, 
+ .product-feature-cards-wrapper, .cart-items-wrapper, 
+ .cart-item-content-wrapper, .check-out-buttons-wrapper, .customer-information {
     gap: var(--padding-small-desktop);
+}
+
+.payment-section {
+    gap: var(--padding-medium-desktop);
 }
 
 .cart-item {
@@ -131,14 +146,17 @@ details {
     .hero-section, .about-section, .best-seller-section, 
     .browse-by-category-section, .value-section, .blog-section, 
     .review-section, footer, .popup-content, .product-listing, .search-result, 
-    .product-information, .product-features, .similar-items {
+    .product-information, .product-features, .similar-items, .cart-content-wrapper, 
+    .payment-page-wrapper, .order-confirmation-section {
         padding: var(--padding-medium-mobile) var(--padding-side-mobile);
     }
 
     /* Must add all the sections with gap between items in row */
     .product-cards-wrapper-row, .category-cards-wrapper,
     .blog-cards-wrapper, .review-cards-wrapper, footer, 
-    .search-function, .search-suggestion-wrapper, .product-content-wrapper, .cart-items-wrapper, .popup-content {
+    .search-function, .search-suggestion-wrapper, .product-content-wrapper, 
+    .cart-items-wrapper, .popup-content, .cart-item-content-wrapper, .check-out-buttons-wrapper,
+    .payment-section, .customer-information, .billing-address-input  {
         gap: var(--padding-small-mobile);
     }
 
@@ -180,5 +198,17 @@ details {
 
     .product-content-wrapper {
         padding: 0;
+    }
+
+    .payment-section {
+        gap: var(--padding-medium-mobile);
+    }
+
+    .order-summary-section > .popup-content {
+        padding: var(--padding-medium-mobile) 0;
+    }
+
+    .order-confirmation-section {
+        gap: var(--padding-medium-mobile);
     }
 }

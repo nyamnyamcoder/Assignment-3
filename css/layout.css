@@ -150,6 +150,12 @@ nav {
   justify-content: start;
 }
 
+.order-confirmation-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Must add all the sections that has sub-heading */
 .best-seller-section, .browse-by-category-section, 
 .value-section, .blog-section, .review-section, .popup-content, 
@@ -177,6 +183,18 @@ nav {
   object-fit: cover;
   aspect-ratio: 3/4;
 }
+
+.order-confirmation-image-wrapper {
+  width: 500px;
+  height: 300px;
+}
+
+.order-confirmation-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .category-name {
   position: absolute;
@@ -298,6 +316,10 @@ footer {
 .input{
   border-radius: 10px;
   width: auto;
+}
+
+.payment-page-wrapper .input {
+  width: 100%;
 }
 
 .popup-content, .popular-searches, .cart-items-wrapper {
@@ -478,6 +500,46 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.cart-item-content-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.check-out-buttons-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.paypal-logo {
+  height: 30px; 
+  padding-left: 10px;
+  align-self: center;
+}
+
+.shoppay-logo {
+  height: 25px;
+  padding-left: 10px;
+  align-self: center;
+}
+
+.payment-page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.customer-information, .payment-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.billing-address-input {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 @media (max-width: 390px) {
 
   body {
@@ -578,5 +640,33 @@ footer {
     flex-direction: column;
   }
 
+  .check-out-buttons-wrapper {
+    width: 100%;
+  }
+
+  .paypal-logo {
+    height: 25px; 
+    padding-left: 10px;
+  }
+  
+  .shoppay-logo {
+    height: 20px;
+    padding-left: 10px;
+  }
+
+  .payment-page-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-confirmation-section{
+    justify-content: start;
+    align-items: start;
+  }
+
+  .order-confirmation-image-wrapper {
+    width: 300px;
+    height: 200px;
+  }
 }
 

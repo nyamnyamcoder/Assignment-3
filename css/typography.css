@@ -125,6 +125,7 @@ h4 {
 .size-option--clicked {
     font-weight: var(--font-primary-bold);
 }
+
 @media (max-width: 390px) {
     body {
         font-size: var(--text-base-size-mobile);

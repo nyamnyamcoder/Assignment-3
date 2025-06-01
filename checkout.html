@@ -150,7 +150,7 @@
                 <div class="cart-subtotal-wrapper">
                     <h2 class="heading">Subtotal:</h2>
                     <div>
-                        <h2 class="heading subtotal-amount">AUD$0.00</h2>
+                        <h2 class="heading">AUD$0.00</h2>
                         <p>(includes GST)</p>
                     </div>
                 </div>
@@ -217,145 +217,37 @@
         
     </header>
 
-    <section class="product-information">
-        <div class="product-images-wrapper">
-            <div class="main-image-wrapper">
-                <!-- main product image -->
-                <img class="main-image" src="images/Grace dress.webp">
+    <section class="cart-content">
+    <div class="cart-content-wrapper">
+        <div class="popup-content">
+            <div class="cart-heading-wrapper">
+                <h2 class="heading">Your cart</h2>
             </div>
-            <div class="image-view-wrapper">
-                <!-- white color dress images -->
-                <img class="side-image side-image--clicked" src="images/Grace dress.webp" data-color="white">
-                <img class="side-image side-image--unclicked" src="images/Grace dress 2.webp" data-color="white">
-                <img class="side-image side-image--unclicked" src="images/Grace dres 3.webp" data-color="white">
-                <img class="side-image side-image--unclicked" src="images/Grace dress 3.webp" data-color="white">
-                <!-- pink color dress images -->
-                <img class="side-image side-image--unclicked color-hidden" src="images/Grace dress - pink.webp" data-color="pink">
-                <img class="side-image side-image--unclicked color-hidden" src="images/Grace dress - pink 2.webp" data-color="pink">
+            <div class="cart-items-wrapper">
+                <p class="cart-place-holder-text">Your cart is empty.</p>
+                <div class="cart-subtotal-wrapper">
+                    <h2 class="heading">Subtotal:</h2>
+                    <div>
+                        <h2 class="heading subtotal-amount">AUD$0.00</h2>
+                        <p>(includes GST)</p>
+                    </div>
+                </div>
             </div>
+            <div class="check-out-buttons-wrapper">
+                <button id="check-out-to-payment" class="btn btn--brown check-out-btn">Check out</button>
+                <p>Express checkout:</p>
+                <button class="btn btn--shoppay check-out-btn">
+                    Buy with
+                    <img src="images/Shop pay - logo white.webp" alt="ShopPay logo" class="shoppay-logo">
+                </button>
+                <button class="btn btn--paypal check-out-btn">
+                    Buy with
+                    <img src="images/Paypal - logo.png" alt="PayPal logo" class="paypal-logo">
+                </button>
+            </div>
+               
         </div>
-        <div class="product-content-wrapper">
-            <h1 class="heading">Grace dress</h1>
-            <p>$229.95 AUD</p>
-            <div class="color-wrapper">
-                <p class="color-display">Color: White</p>
-                <div class="color-option-wrapper">
-                    <div class="color-option color-option--white"></div>
-                    <div class="color-option color-option--pink"></div>
-                </div>
-            </div>
-            <div class="size-wrapper">
-                <p class="size-display">Size:</p>
-                <div class="size-option-wrapper">
-                    <div class="size-option">XS</div>
-                    <div class="size-option">S</div>
-                    <div class="size-option">M</div>
-                    <div class="size-option">L</div>
-                    <div class="size-option">XL</div>
-                </div>
-            </div>
-            <div class="quantity-wrapper">
-                <p>Quantity: </p>
-                <div class="quantity-selector">
-                    <button class="quantity-btn btn--icon-green" id="decrease-btn" type="button">
-                        <span class="material-symbols-outlined">remove</span>
-                    </button>
-                    <div class="quantity-display" id="quantity-display"></div>
-                    <button class="quantity-btn btn--icon-green" id="increase-btn" type="button">
-                        <span class="material-symbols-outlined">add</span>
-                    </button>
-                </div>
-            </div>
-
-            <button class="btn btn--brown add-to-cart-btn">Add to cart </button>
-
-            <div class="accordion-wrapper">
-                <details>
-                    <summary class="heading">
-                        Description
-                        <span class="material-symbols-outlined accordion-icon">expand_more</span>
-                    </summary>
-                    <p> Grace dress has a perfectly fitted square neckline, flowy fabric and stretchy elastic for a flattering fit. 
-                        Front ties are adjustable and deep pockets, as always. </p>
-                </details>
-    
-                <details>
-                    <summary class="heading">
-                        Size details
-                        <span class="material-symbols-outlined accordion-icon">expand_more</span>
-                    </summary>
-                    <p>XS - Length: 116cm, Bust: 88cm (size 6)</p>
-                    <p> S - Length: 119cm, Bust: 92cm (size 8)</p>
-                    <p>M - Length: 122cm, Bust: 97cm (size 10-12)</p>
-                    <p>L - Length: 123cm, Bust: 104cm (size 14)</p>
-                    <p>XL - Length 124cm, Bust: 112cm (roomy size 16+) </p>
-                    <p>*Please note the below length measurement is taken front and centre (total length of the dress from top of sleeve to hem). 
-                        Our Grace midi dress is approximately 30cm longer than our short Grace style. </p>
-                </details>
-                
-                <details>
-                    <summary class="heading">
-                        Material
-                        <span class="material-symbols-outlined accordion-icon">expand_more</span>
-                    </summary>
-                    <p>White - 100% cotton poplin </p>
-                    <p>*Please note the white cotton poplin is on the sheer side and may need to be worn with neutral coloured undergarments or slip. 
-                    </p>
-                    <p>Pink - 100% sandwashed linen</p>
-                </details>
-            </div>
-        </div>
-
-    </section>
-    <section class="product-features">
-        <h2 class="heading">Features you'll love...</h2>
-        <div class="product-feature-cards-wrapper">
-            <div class="product-feature-card">
-                <img class="product-feature-image" src="images/Grace dress - feature 1.webp">
-                <p>Square neckline with elastic & adjustable tie. Breast-feeding friendly.</p>
-            </div>
-            <div class="product-feature-card">
-                <img class="product-feature-image" src="images/Grace dress -feature 2.webp">
-                <p>Can be worn on or off-shoulders. Wear in the way you feel like.</p>
-            </div>
-            <div class="product-feature-card">
-                <img class="product-feature-image" src="images/Grace dress - feature 3.webp">
-                <p>Soft & breathable material perfect for summer.</p>
-            </div>
-        </div>
-    </section>
-    <section class="similar-items">
-        <h2 class="heading">Recommended for you</h2>
-        <div class="product-cards-wrapper-row">
-            <div class="product-card">
-                <img class="product-image" src="images/Market dress.webp" alt="A woman wearing white mini dress, taking a mirror selfie.">
-                <div class="product-card-content-wrapper">
-                    <h3 class="heading">Market dress</h3>
-                    <p>$279.95</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img class="product-image" src="images/Harp dress - Stripe 3.webp" alt="A woman wearing checkered mini dress, taking a mirror selfie.">
-                <div class="product-card-content-wrapper">
-                    <h3 class="heading">Harp dress</h3>
-                    <p>$199.95</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img class="product-image" src="images/Grace dress.webp" alt="A woman wearing long white dress, taking mirror selfie.">
-                <div class="product-card-content-wrapper">
-                    <h3 class="heading">Grace dress</h3>
-                    <p>$229.95</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img class="product-image" src="images/Marju dress.webp" alt="A woman wearing yellow mini dress, taking mirror selfie.">
-                <div class="product-card-content-wrapper">
-                    <h3 class="heading">Marju dress</h3>
-                    <p>$259.95</p>
-                </div>
-            </div>
-        </div>
+    </div>
     </section>
 
     <!-- Footer -->
@@ -408,5 +300,6 @@
     <script src="product-page.js"></script>
     <script src="cart-manager.js"></script>
     <script src="checkout.js"></script>
+    <script src="order-confirmation.js"></script>
 </body>
 </html>

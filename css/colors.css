@@ -62,6 +62,18 @@ nav {
     color: var(--color-white);
 }
 
+.btn--shoppay {
+    background-color: #583BEC;
+    border: none;
+    color: var(--color-white);
+}
+
+.btn--paypal {
+    background-color: #FFC43A;
+    border: none;
+    color: var(--color-white);
+}
+
 .btn--green {
     background-color: var(--color-dark-green);
     border: none;
@@ -71,6 +83,15 @@ nav {
 .input {
     background-color: var(--color-white);
     border: none;
+}
+
+.payment-page-wrapper .input {
+    border: 2.5px solid var(--color-dark-green);
+}
+
+.payment-info > #payment-method {
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
 }
 
 .search-input {
