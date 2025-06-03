@@ -1,3 +1,5 @@
+// The code in this file has been generated using Claude.ai (https://claude.ai)
+
 // manage the cart content across pages
 class CartManager {
     constructor() {
@@ -30,17 +32,17 @@ class CartManager {
         this.isInitialized = true;
     }
 
-    // Get all cart containers (popup and main page)
+    // get all cart containers (popup and main page)
     getCartContainers() {
         return document.querySelectorAll('.cart-items-wrapper');
     }
 
-    // Get all subtotal containers
+    // get all subtotal containers
     getSubtotalContainers() {
         return document.querySelectorAll('.cart-subtotal-wrapper');
     }
 
-    // Get all subtotal amount elements
+    // get all subtotal amount elements
     getSubtotalAmounts() {
         return document.querySelectorAll('.subtotal-amount');
     }
@@ -60,7 +62,7 @@ class CartManager {
     }
 
     syncExistingCartToStorage() {
-        // Try to sync from any existing cart container
+        // sync from any existing cart container
         const cartContainers = this.getCartContainers();
         
         for (let cartItemsWrapper of cartContainers) {
@@ -94,13 +96,13 @@ class CartManager {
                         imageSrc
                     });
                 } catch (error) {
-                    // Error syncing cart item
+
                 }
             });
 
             if (cart.length > 0) {
                 this.saveCart(cart);
-                break; // Stop after finding the first cart with items
+                break; // stop after finding the first cart with items
             }
         }
     }
@@ -138,7 +140,7 @@ class CartManager {
         }
     }
 
-    // Show placeholder in all cart containers
+    // show placeholder in all cart containers
     showPlaceholderInContainer(cartItemsWrapper, cartSubtotalWrapper) {
         if (!cartItemsWrapper || !cartSubtotalWrapper) return;
 
@@ -154,7 +156,7 @@ class CartManager {
         }
     }
 
-    // Hide placeholder in specific container
+    // hide placeholder in specific container
     hidePlaceholderInContainer(cartItemsWrapper) {
         const placeholder = cartItemsWrapper.querySelector('.cart-place-holder-text');
         if (placeholder) {
@@ -162,31 +164,31 @@ class CartManager {
         }
     }
 
-    // Render cart in all containers
+    // render cart in all containers
     renderAllCarts() {
         const cartContainers = this.getCartContainers();
         const cart = this.getCart();
 
         cartContainers.forEach((cartItemsWrapper, containerIndex) => {
-            // Find the corresponding subtotal wrapper for this container
+            // find the corresponding subtotal wrapper for this container
             const cartSubtotalWrapper = cartItemsWrapper.parentElement.querySelector('.cart-subtotal-wrapper');
             
             if (!cartSubtotalWrapper) {
                 return;
             }
 
-            // Clear existing items in this container
+            // clear existing items in this container
             const existingItems = cartItemsWrapper.querySelectorAll('.cart-item');
             existingItems.forEach(item => item.remove());
 
             if (cart.length === 0) {
-                // Show placeholder when cart is empty
+                // show placeholder when cart is empty
                 this.showPlaceholderInContainer(cartItemsWrapper, cartSubtotalWrapper);
             } else {
-                // Hide placeholder when cart has items
+                // hide placeholder when cart has items
                 this.hidePlaceholderInContainer(cartItemsWrapper);
                 
-                // Add all cart items to this container
+                // add all cart items to this container
                 cart.forEach((item, index) => {
                     const cartItemHTML = this.createCartItemHTML(item, index);
                     cartSubtotalWrapper.insertAdjacentHTML('beforebegin', cartItemHTML);
@@ -194,7 +196,7 @@ class CartManager {
             }
         });
         
-        // Bind delete events after all items are added to all containers
+        // bind delete events after all items are added to all containers
         this.bindDeleteEvents();
     }
 
@@ -219,13 +221,13 @@ class CartManager {
         `;
     }
 
-    // Update subtotal in all containers
+    // update subtotal in all containers
     updateAllCartSubtotals() {
         const cart = this.getCart();
         const subtotalAmounts = this.getSubtotalAmounts();
         
         if (cart.length === 0) {
-            // Set all subtotals to 0
+            // set all subtotals to 0
             subtotalAmounts.forEach(element => {
                 if (element) {
                     element.textContent = 'AUD$0.00';
@@ -234,7 +236,7 @@ class CartManager {
             return;
         }
         
-        // Calculate total from stored cart data
+        // calculate total from stored cart data
         let total = 0; 
         cart.forEach(item => {
             const priceMatch = item.price.match(/[\d.]+/);
@@ -243,7 +245,7 @@ class CartManager {
             }
         });
         
-        // Update all subtotal amounts
+        // update all subtotal amounts
         subtotalAmounts.forEach(element => {
             if (element) {
                 element.textContent = `AUD$${total.toFixed(2)}`;
@@ -252,14 +254,14 @@ class CartManager {
     }
 
     bindDeleteEvents() {
-        // Remove any existing event listeners first
+        // remove any existing event listeners first
         const deleteButtons = document.querySelectorAll('.delete-cart-item');
         deleteButtons.forEach(button => {
-            // Create a new event listener for each button
+            // create a new event listener for each button
             const newButton = button.cloneNode(true);
             button.parentNode.replaceChild(newButton, button);
             
-            // Add the click event to the new button
+            // add the click event to the new button
             newButton.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
@@ -275,17 +277,9 @@ class CartManager {
         this.renderAllCarts();
         this.updateAllCartSubtotals();
     }
-
-    // Method to manually reload cart (useful for debugging)
-    reload() {
-        if (this.isInitialized) {
-            this.renderAllCarts();
-            this.updateAllCartSubtotals();
-        }
-    }
 }
 
-// initialize cart manager globally - but only if we're not already initialized
+// initialize cart manager globally
 if (!window.cartManager) {
     window.cartManager = new CartManager();
 }

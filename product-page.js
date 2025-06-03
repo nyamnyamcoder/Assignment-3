@@ -2,7 +2,7 @@
 
 // for the quantity selector
 document.addEventListener('DOMContentLoaded', function() {
-    // Quantity selector functionality
+    // quantity selector functionality
     const decreaseBtn = document.getElementById('decrease-btn');
     const increaseBtn = document.getElementById('increase-btn');
     const quantityDisplay = document.getElementById('quantity-display');
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Add this to your existing product-page.js file or create size-selector.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Size selector functionality
+    // size selector
     const sizeOptions = document.querySelectorAll('.size-option');
     const sizeDisplay = document.querySelector('.size-display');
 
@@ -86,15 +86,15 @@ document.addEventListener('DOMContentLoaded', function() {
             // bold the class
             sizeElement.classList.add('size-option--clicked');
             
-            // Update selected size and display
+            // update selected size and display
             selectedSize = size;
             updateSizeDisplay(size);
         }
 
-        // Set initial state
+        // set initial state
         updateSizeDisplay('Select a size');
 
-        // Add event listeners to all size options
+        // add event listeners to all size options
         sizeOptions.forEach(option => {
             option.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Image gallery functionality
+    // image gallery 
     const mainImage = document.querySelector('.main-image');
     const sideImages = document.querySelectorAll('.side-image');
 
@@ -125,18 +125,18 @@ document.addEventListener('DOMContentLoaded', function() {
         function selectImage(sideImageElement) {
             const imageSrc = sideImageElement.src;
             
-            // Clear previous selections
+            // clear previous selections
             clearSelectedImageStates();
             
-            // Add selected state to clicked image
+            // add selected state to clicked image
             sideImageElement.classList.add('side-image--clicked');
             sideImageElement.classList.remove('side-image--unclicked');
             
-            // Update main image
+            // update the main image
             updateMainImage(imageSrc);
         }
 
-        // Add event listeners to all side images
+        // add event listeners to all the side images
         sideImages.forEach(image => {
             image.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -159,10 +159,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // clear all color selections
             colorOptions.forEach(opt => opt.classList.remove('color-option--clicked'));
             
-            // Add clicked state
+            // clicked state
             option.classList.add('color-option--clicked');
             
-            // Decide color
+            // decide color option
             let colorKey = '';
             let colorName = '';
             
@@ -174,10 +174,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 colorName = 'Pink';
             }
             
-            // Update color display
+            // update color option display
             colorDisplay.textContent = `Color: ${colorName}`;
             
-            // Hide all images
+            // hide all images not currently selected
             const allImages = document.querySelectorAll('.side-image');
             allImages.forEach(img => {
                 img.classList.add('color-hidden');
@@ -185,14 +185,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 img.classList.add('side-image--unclicked');
             });
             
-            // Show images of the selected color
+            // show images of the selected color
             const colorImages = document.querySelectorAll(`[data-color="${colorKey}"]`);
             
             colorImages.forEach(img => {
                 img.classList.remove('color-hidden');
             });
             
-            // Set first image as active
+            // set first image as active
             if (colorImages.length > 0) {
                 const firstImage = colorImages[0];
                 firstImage.classList.add('side-image--clicked');
